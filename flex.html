@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+<style>
+    .container{
+        border: 2px solid salmon;
+        display: flex;
+        /* justify-content: space-evenly; */
+        height: 250px;
+        /* flex-direction: row-reverse; */
+        /* align-items: center; */
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+    .box{
+        border: 2px dashed tan;
+        width: 50px;
+        height: 50px;
+        
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav a{
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid black;
+        width: 50%;
+        padding: 20px;
+    }
+    .login input{
+        margin-top: 20px;
+    }
+    .logincon{
+       display: flex;
+       justify-content: center;
+       padding-bottom: 100px;
+    }
+</style>
+<body>
+    <nav>
+        <div>
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Blog</a>
+        </div>
+        <a href="">Log In</a>
+    </nav>
+    <section class="logincon">
+        <form class="login">
+            <h3>Plz log in</h3>
+            <input type="email" name="" id="" placeholder="E-Mail">
+            <input type="password" placeholder="password">
+            <input type="submit" value="login">
+            </form>
+    </section>
+    <h1>FlexBox Layout</h1>
+    <div class="container">
+       <div class="box">Box-1</div>
+       <div class="box">Box-2</div>
+       <div class="box">Box-3</div>
+    </div>
+</body>
+</html>
